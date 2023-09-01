@@ -1,0 +1,1411 @@
+
+<!DOCTYPE html>
+<html class="wp-toolbar"
+	lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>플러그인 추가 &lsaquo; vul-test &#8212; 워드프레스</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!=='undefined')jQuery(function(){func();});else if(typeof wpOnload!=='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp-admin/admin-ajax.php',
+	pagenow = 'plugin-install',
+	typenow = '',
+	adminpage = 'plugin-install-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' href='http://localhost:8080/wp-admin/load-styles.php?c=0&amp;dir=ltr&amp;load%5Bchunk_0%5D=dashicons,admin-bar,common,forms,admin-menu,dashboard,list-tables,edit,revisions,media,themes,about,nav-menus,wp-pointer,widgets&amp;load%5Bchunk_1%5D=,site-icon,l10n,buttons,wp-auth-check&amp;ver=6.3' media='all' />
+<link rel='stylesheet' id='thickbox-css' href='http://localhost:8080/wp-includes/js/thickbox/thickbox.css?ver=6.3' media='all' />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost:8080\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+
+<script>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"1","time":"1693565465","secure":""};/* ]]> */
+</script>
+<script src='http://localhost:8080/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate,utils&amp;ver=6.3'></script>
+<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#a7aaad","focus":"#72aee6","current":"#fff"}};</script>
+	<link id="wp-admin-canonical" rel="canonical" href="http://localhost:8080/wp-admin/plugin-install.php?tab=popular&#038;paged=1" />
+	<script>
+		if ( window.history.replaceState ) {
+			window.history.replaceState( null, null, document.getElementById( 'wp-admin-canonical' ).href + window.location.hash );
+		}
+	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"><style media="print">#wpadminbar { display:none; }</style>
+	</head>
+<body class="wp-admin wp-core-ui no-js plugin-install-php folded auto-fold admin-bar branch-6-3 version-6-3 admin-color-fresh locale-ko-kr no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script>
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+
+<div id="adminmenumain" role="navigation" aria-label="주 메뉴">
+<a href="#wpbody-content" class="screen-reader-shortcut">주 콘텐츠로 건너뛰기</a>
+<a href="#wp-toolbar" class="screen-reader-shortcut">툴바로 바로가기</a>
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-dashboard' aria-hidden='true'><br /></div><div class='wp-menu-name'>알림판</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>알림판</li><li class="wp-first-item"><a href='index.php' class="wp-first-item">홈</a></li><li><a href='update-core.php'>업데이트 <span class="update-plugins count-3"><span class="update-count">3</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" id="menu-posts">
+	<a href='edit.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-post open-if-no-js menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-post' aria-hidden='true'><br /></div><div class='wp-menu-name'>글</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>글</li><li class="wp-first-item"><a href='edit.php' class="wp-first-item">모든 글</a></li><li><a href='post-new.php'>새로 추가</a></li><li><a href='edit-tags.php?taxonomy=category'>카테고리</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>태그</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-media' aria-hidden='true'><br /></div><div class='wp-menu-name'>미디어</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>미디어</li><li class="wp-first-item"><a href='upload.php' class="wp-first-item">라이브러리</a></li><li><a href='media-new.php'>새로 추가</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-page' aria-hidden='true'><br /></div><div class='wp-menu-name'>페이지</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>페이지</li><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">모든 페이지</a></li><li><a href='post-new.php?post_type=page'>새로 추가</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+	<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-comments' aria-hidden='true'><br /></div><div class='wp-menu-name'>댓글 <span class="awaiting-mod count-0"><span class="pending-count" aria-hidden="true">0</span><span class="comments-in-moderation-text screen-reader-text">검토 중인 0개의 댓글</span></span></div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator" aria-hidden="true"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-appearance' aria-hidden='true'><br /></div><div class='wp-menu-name'>외모</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>외모</li><li class="wp-first-item"><a href='themes.php' class="wp-first-item">테마 <span class="update-plugins count-0"><span class="theme-count">0</span></span></a></li><li><a href='site-editor.php'>편집기</a></li></ul></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins" id="menu-plugins">
+	<a href='plugins.php' class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-plugins" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-plugins' aria-hidden='true'><br /></div><div class='wp-menu-name'>플러그인 <span class="update-plugins count-2"><span class="plugin-count">2</span></span></div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>플러그인 <span class="update-plugins count-2"><span class="plugin-count">2</span></span></li><li class="wp-first-item"><a href='plugins.php' class="wp-first-item">설치한 플러그인</a></li><li class="current"><a href='plugin-install.php' class="current" aria-current="page">새로 추가</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-users' aria-hidden='true'><br /></div><div class='wp-menu-name'>사용자</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>사용자</li><li class="wp-first-item"><a href='users.php' class="wp-first-item">모든 사용자</a></li><li><a href='user-new.php'>새로 추가</a></li><li><a href='profile.php'>프로필</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-tools' aria-hidden='true'><br /></div><div class='wp-menu-name'>도구</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>도구</li><li class="wp-first-item"><a href='tools.php' class="wp-first-item">사용할 수 있는 도구</a></li><li><a href='import.php'>가져오기</a></li><li><a href='export.php'>내보내기</a></li><li><a href='site-health.php'>사이트 건강 <span class="menu-counter site-health-counter count-0"><span class="count">0</span></span></a></li><li><a href='export-personal-data.php'>개인정보 내보내기</a></li><li><a href='erase-personal-data.php'>개인정보 삭제</a></li><li><a href='theme-editor.php'>테마 파일 편집기</a></li><li><a href='plugin-editor.php'>플러그인 파일 편집기</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image dashicons-before dashicons-admin-settings' aria-hidden='true'><br /></div><div class='wp-menu-name'>설정</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head' aria-hidden='true'>설정</li><li class="wp-first-item"><a href='options-general.php' class="wp-first-item">일반</a></li><li><a href='options-writing.php'>쓰기</a></li><li><a href='options-reading.php'>읽기</a></li><li><a href='options-discussion.php'>토론</a></li><li><a href='options-media.php'>미디어</a></li><li><a href='options-permalink.php'>고유주소</a></li><li><a href='options-privacy.php'>개인정보 보호</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><button type="button" id="collapse-button" aria-label="주 메뉴 접기" aria-expanded="true"><span class="collapse-button-icon" aria-hidden="true"></span><span class="collapse-button-label">메뉴 접기</span></button></li></ul>
+</div>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq nojs">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="도구 모음">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-menu-toggle'><a class='ab-item' href='#'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">메뉴</span></a></li><li id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost:8080/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">워드프레스 소개</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li id='wp-admin-bar-about'><a class='ab-item' href='http://localhost:8080/wp-admin/about.php'>워드프레스 소개</a></li><li id='wp-admin-bar-contribute'><a class='ab-item' href='http://localhost:8080/wp-admin/contribute.php'>참여하기</a></li></ul><ul id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li id='wp-admin-bar-wporg'><a class='ab-item' href='https://wordpress.org/'>WordPress.org</a></li><li id='wp-admin-bar-documentation'><a class='ab-item' href='https://wordpress.org/documentation/'>문서</a></li><li id='wp-admin-bar-support-forums'><a class='ab-item' href='https://wordpress.org/support/forums/'>지원</a></li><li id='wp-admin-bar-feedback'><a class='ab-item' href='https://wordpress.org/support/forum/requests-and-feedback'>의견</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost:8080/'>vul-test</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-view-site'><a class='ab-item' href='http://localhost:8080/'>사이트 방문</a></li></ul></div></li><li id='wp-admin-bar-updates'><a class='ab-item' href='http://localhost:8080/wp-admin/update-core.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label" aria-hidden="true">3</span><span class="screen-reader-text updates-available-text">3 업데이트 가능</span></a></li><li id='wp-admin-bar-comments'><a class='ab-item' href='http://localhost:8080/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">검토 중인 0개의 댓글</span></a></li><li id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' aria-haspopup="true" href='http://localhost:8080/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">새로 추가</span></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-new-content-default' class="ab-submenu"><li id='wp-admin-bar-new-post'><a class='ab-item' href='http://localhost:8080/wp-admin/post-new.php'>글</a></li><li id='wp-admin-bar-new-media'><a class='ab-item' href='http://localhost:8080/wp-admin/media-new.php'>미디어</a></li><li id='wp-admin-bar-new-page'><a class='ab-item' href='http://localhost:8080/wp-admin/post-new.php?post_type=page'>페이지</a></li><li id='wp-admin-bar-new-user'><a class='ab-item' href='http://localhost:8080/wp-admin/user-new.php'>사용자</a></li></ul></div></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='http://localhost:8080/wp-admin/profile.php'>안녕하세요 <span class="display-name">dltmddyd645</span>님<img alt='' src='http://2.gravatar.com/avatar/edbe2535bec86a2127d33e5b25347277?s=26&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/edbe2535bec86a2127d33e5b25347277?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' loading='lazy' decoding='async'/></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='http://localhost:8080/wp-admin/profile.php'><img alt='' src='http://2.gravatar.com/avatar/edbe2535bec86a2127d33e5b25347277?s=64&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/edbe2535bec86a2127d33e5b25347277?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' loading='lazy' decoding='async'/><span class='display-name'>dltmddyd645</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='http://localhost:8080/wp-admin/profile.php'>프로필 편집</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='http://localhost:8080/wp-login.php?action=logout&#038;_wpnonce=208594ae11'>로그아웃</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://localhost:8080/wp-login.php?action=logout&#038;_wpnonce=208594ae11">로그아웃</a>
+					</div>
+
+		
+<div id="wpbody" role="main">
+
+<div id="wpbody-content">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="상황별 도움말 탭">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-overview" class="active">
+								<a href="#tab-panel-overview" aria-controls="tab-panel-overview">
+									개요								</a>
+							</li>
+							
+							<li id="tab-link-adding-plugins">
+								<a href="#tab-panel-adding-plugins" aria-controls="tab-panel-adding-plugins">
+									플러그인 추가								</a>
+							</li>
+													</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p><strong>추가 정보:</strong></p><p><a href="https://wordpress.org/documentation/article/plugins-add-new-screen/">플러그인 설치하기 문서</a></p><p><a href="https://wordpress.org/support/forums/">지원 포럼</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-overview" class="help-tab-content active">
+								<p>사용자 정의 기능이 있는 기능으로 확장할 수 있도록 워드프레스로 플러그인을 연결합니다. 플러그인은 전 세계 수 천의 개발자들이 개발하는 핵심 워드프레스와 별도록 개발하는 응용 프로그램입니다. 공식 <a href="https://wordpress.org/plugins/">워드프레스 플러그인 디렉터리</a>의 모든 플러그인은 워드프레스가 사용하는 라이선스와 호환합니다.</p><p>검색하거나 바로 여기 자신의 플러그인 구역을 탐색하여 설치할 새 플러그인을 찾을 수 있습니다. <span id="live-search-desc" class="hide-if-no-js">입력할 때 검색 결과를 업데이트합니다.</span></p>							</div>
+							
+							<div id="tab-panel-adding-plugins" class="help-tab-content">
+								<p>무엇을 찾는지 알고 있다면, 검색이 최선의 선택입니다. 검색 화면은 특정 용어, 제작자, 또는 태그를 워드프레스 플러그인 디렉터리에서 검색할 수 있는 옵션이 있습니다. 인기있는 태그를 선택하여 디렉터리를 검색할 수도 있습니다. 더 큰 글자가 있는 태그는 더 많은 플러그인이 해당 태그로 레이블이 달렸다는 것을 의미합니다.</p><p>무엇이 가능한지에 대한 아이디어를 얻기 원한다면, 플러그인 목록 위의 링크를 사용해 추천 및 인기있는 플러그인을 둘러볼 수 있습니다. 이 영역은 주기적으로 교체됩니다.</p><p>플러그인 목록의 위에 있는 즐겨찾기 링크를 사용하고 WordPress.org 사용자명을 입력하여 사용자의 즐겨찾는 플러그인을 탐색할 수도 있습니다.</p><p>다른 곳에서 다운로드받은 플러그인을 설치하길 원한다면, 좌측 상단의 업로드를 클릭하세요. .zip 압축파일로 업로드를 할 것인지 묻는 메세지가 나타나며, 업로드한 뒤에는, 새 플러그인을 활성화할 수 있습니다.</p>							</div>
+												</div>
+				</div>
+			</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<button type="button" id="contextual-help-link" class="button show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">도움말</button>
+			</div>
+				</div>
+		<div class='update-nag notice notice-warning inline'><a href="https://wordpress.org/documentation/wordpress-version/version-6-3-1/">워드프레스 6.3.1</a>을(를) 사용할 수 있습니다! <a href="http://localhost:8080/wp-admin/update-core.php" aria-label="지금 워드프레스를 업데이트 해주세요">지금 업데이트 해주세요</a>.</div><div class="wrap plugin-install-tab-popular">
+<h1 class="wp-heading-inline">
+플러그인 추가</h1>
+
+ <a href="http://localhost:8080/wp-admin/plugin-install.php?tab=upload" class="upload-view-toggle page-title-action"><span class="upload">플러그인 업로드</span><span class="browse">플러그인 탐색</span></a>
+<hr class="wp-header-end">
+
+	<div class="upload-plugin-wrap">
+		<div class="upload-plugin">
+	<p class="install-help">.zip 형식의 플러그인을 가지고 있다면, 여기에 업로드하여 설치하거나 업데이트할 수도 있습니다.</p>
+	<form method="post" enctype="multipart/form-data" class="wp-upload-form" action="http://localhost:8080/wp-admin/update.php?action=upload-plugin">
+		<input type="hidden" id="_wpnonce" name="_wpnonce" value="9f0e7c02d8" /><input type="hidden" name="_wp_http_referer" value="/wp-admin/plugin-install.php?tab=popular&#038;paged=1" />		<label class="screen-reader-text" for="pluginzip">
+			플러그인 zip 파일		</label>
+		<input type="file" id="pluginzip" name="pluginzip" accept=".zip" />
+		<input type="submit" name="install-plugin-submit" id="install-plugin-submit" class="button" value="지금 설치"  />	</form>
+</div>
+		</div>
+	<h2 class='screen-reader-text'>플러그인 목록 필터</h2><div class="wp-filter">
+	<ul class="filter-links">
+			<li class='plugin-install-featured'><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=featured">추천</a> </li>
+	<li class='plugin-install-popular'><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=popular" class="current" aria-current="page">인기</a> </li>
+	<li class='plugin-install-recommended'><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=recommended">추천됨</a> </li>
+	<li class='plugin-install-favorites'><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=favorites">즐겨찾기</a></li>
+	</ul>
+
+			<form class="search-form search-plugins" method="get">
+		<input type="hidden" name="tab" value="search" />
+		<label class="screen-reader-text" for="typeselector">
+			다음으로 플러그인 검색:		</label>
+		<select name="type" id="typeselector">
+			<option value="term" selected='selected'>키워드</option>
+			<option value="author">글쓴이</option>
+			<option value="tag">태그</option>
+		</select>
+		<label class="screen-reader-text" for="search-plugins">
+			플러그인 검색		</label>
+		<input type="search" name="s" id="search-plugins" value="" class="wp-filter-search" placeholder="플러그인 검색..." />
+		<input type="submit" id="search-submit" class="button hide-if-js" value="플러그인 검색"  />	</form>
+	</div>
+			<form id="plugin-filter" method="post">
+		<input type="hidden" name="_wp_http_referer" value="/wp-admin/plugin-install.php?tab=popular&#038;paged=1" />			<div class="tablenav top">
+				<div class="alignleft actions">
+									</div>
+				<h2 class='screen-reader-text'>플러그인 목록 내비게이션</h2><div class='tablenav-pages'><span class="displaying-num">54,913 아이템</span>
+<span class='pagination-links'><span class="tablenav-pages-navspan button disabled" aria-hidden="true">&laquo;</span>
+<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&lsaquo;</span>
+<span class="paging-input"><span class='total-pages'>1,526</span> 중 <label for="current-page-selector" class="screen-reader-text">현재 페이지</label><input class='current-page' id='current-page-selector' type='text'
+					name='paged' value='1' size='4' aria-describedby='table-paging' /><span class='tablenav-paging-text'></span></span>
+<a class='next-page button' href='http://localhost:8080/wp-admin/plugin-install.php?tab=popular&#038;paged=2'><span class='screen-reader-text'>다음 페이지</span><span aria-hidden='true'>&rsaquo;</span></a>
+<a class='last-page button' href='http://localhost:8080/wp-admin/plugin-install.php?tab=popular&#038;paged=1526'><span class='screen-reader-text'>마지막 페이지</span><span aria-hidden='true'>&raquo;</span></a></span></div>				<br class="clear" />
+			</div>
+		<div class="wp-list-table widefat plugin-install">
+		<h2 class='screen-reader-text'>플러그인 목록</h2>	<div id="the-list">
+				<div class="plugin-card plugin-card-contact-form-7">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=contact-form-7&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						문의 양식 7						<img src="https://ps.w.org/contact-form-7/assets/icon.svg?rev=2339255" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="contact-form-7" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=contact-form-7&#038;_wpnonce=32585d0132" aria-label="지금 문의 양식 7 5.8 설치" data-name="문의 양식 7 5.8">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=contact-form-7&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="문의 양식 7 5.8에 대한 추가 정보" data-title="문의 양식 7 5.8">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>간단하지만 유연한 또 하나의 문의 양식 플러그인입니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://ideasilo.wordpress.com/">Takayuki Miyoshi</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">2,047 평가 기준에 의한 4.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-empty" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(2,047)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-elementor">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=elementor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						엘리멘터 웹사이트 빌더 &#8211; 단순한 페이지 빌더 그 이상						<img src="https://ps.w.org/elementor/assets/icon.svg?rev=2597493" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="elementor" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=elementor&#038;_wpnonce=a29344a6ae" aria-label="지금 엘리멘터 웹사이트 빌더 &#8211; 단순한 페이지 빌더 그 이상 3.15.3 설치" data-name="엘리멘터 웹사이트 빌더 &#8211; 단순한 페이지 빌더 그 이상 3.15.3">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=elementor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="엘리멘터 웹사이트 빌더 &#8211; 단순한 페이지 빌더 그 이상 3.15.3에 대한 추가 정보" data-title="엘리멘터 웹사이트 빌더 &#8211; 단순한 페이지 빌더 그 이상 3.15.3">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>엘리멘터 웹사이트 빌더에는 모든 것이 있습니다: 드래그 앤 드롭 페이지 빌더, 완벽한 픽셀 디자인, 모바일 반응형 편집 등. 지금 시작하세요!</p>
+					<p class="authors"> <cite>작성자 <a href="https://elementor.com/?utm_source=wp-plugins&amp;utm_campaign=author-uri&amp;utm_medium=wp-dash">Elementor.com</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">6,594 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(6,594)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wordpress-seo">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordpress-seo&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						요스트 SEO						<img src="https://ps.w.org/wordpress-seo/assets/icon.svg?rev=2363699" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wordpress-seo" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wordpress-seo&#038;_wpnonce=1963e1c49d" aria-label="지금 요스트 SEO 21.0 설치" data-name="요스트 SEO 21.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordpress-seo&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="요스트 SEO 21.0에 대한 추가 정보" data-title="요스트 SEO 21.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>워드프레스 SEO를 개선시키세요.  요스트 SEO플러그인을 사용하여 더 나은 컨텐츠를 작성하고, 최적화된 워드프레스 웹사이트를 만드십시오.</p>
+					<p class="authors"> <cite>작성자 <a href="https://yoa.st/1uk">Team Yoast</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">27,597 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(27,597)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4일 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-classic-editor">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=classic-editor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						클래식 편집기						<img src="https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="classic-editor" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=classic-editor&#038;_wpnonce=5283d35e90" aria-label="지금 클래식 편집기 1.6.3 설치" data-name="클래식 편집기 1.6.3">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=classic-editor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="클래식 편집기 1.6.3에 대한 추가 정보" data-title="클래식 편집기 1.6.3">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>이전 &quot;클래식&quot; 편집기와 TinyMCE, 메타박스 등이 포함된 이전 스타일의 글 편집 화면을 활성화합니다. 이 화면을 확장하는 모든 플러그인을 지원합니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://github.com/WordPress/classic-editor/">WordPress Contributors</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,140 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,140)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-woocommerce">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=woocommerce&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						우커머스						<img src="https://ps.w.org/woocommerce/assets/icon-256x256.gif?rev=2869506" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="woocommerce" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=woocommerce&#038;_wpnonce=4ec17c2eef" aria-label="지금 우커머스 8.0.3 설치" data-name="우커머스 8.0.3">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=woocommerce&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="우커머스 8.0.3에 대한 추가 정보" data-title="우커머스 8.0.3">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>며칠 만에 온라인 스토어를 시작하고 수년간 계속 성장하는 데 필요한 모든 것이 있습니다. 첫 번째 판매부터 수백만 상당의 수익까지 Woo가 함께합니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://woocommerce.com">Automattic</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">4,130 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(4,130)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2일 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-akismet">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=akismet&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Akismet 안티스팸: 스팸 방지						<img src="https://ps.w.org/akismet/assets/icon-256x256.png?rev=2818463" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="akismet" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=akismet&#038;_wpnonce=5c8f9e875b" aria-label="지금 Akismet 안티스팸: 스팸 방지 5.2 설치" data-name="Akismet 안티스팸: 스팸 방지 5.2">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=akismet&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Akismet 안티스팸: 스팸 방지 5.2에 대한 추가 정보" data-title="Akismet 안티스팸: 스팸 방지 5.2">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The best anti-spam protection to block spam comments and spam in a contact form. The most trusted antispam solution for WordPress and WooCommerce.</p>
+					<p class="authors"> <cite>작성자 <a href="https://automattic.com/wordpress-plugins/">Automattic - Anti Spam Team</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">995 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(995)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wpforms-lite">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wpforms-lite&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress						<img src="https://ps.w.org/wpforms-lite/assets/icon.svg?rev=2574198" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wpforms-lite" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wpforms-lite&#038;_wpnonce=6b4d5e6a27" aria-label="지금 Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress 1.8.3.1 설치" data-name="Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress 1.8.3.1">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wpforms-lite&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress 1.8.3.1에 대한 추가 정보" data-title="Contact Form by WPForms &#8211; Drag &amp; Drop Form Builder for WordPress 1.8.3.1">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The best WordPress contact form plugin. Drag &amp; Drop online form builder to create beautiful contact forms, payment forms, &amp; other custom forms &hellip;</p>
+					<p class="authors"> <cite>작성자 <a href="https://wpforms.com">WPForms</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">13,254 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(13,254)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-all-in-one-wp-migration">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=all-in-one-wp-migration&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						All-in-One WP Migration						<img src="https://ps.w.org/all-in-one-wp-migration/assets/icon-256x256.png?rev=2458334" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="all-in-one-wp-migration" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=all-in-one-wp-migration&#038;_wpnonce=3b020e808d" aria-label="지금 All-in-One WP Migration 7.78 설치" data-name="All-in-One WP Migration 7.78">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=all-in-one-wp-migration&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="All-in-One WP Migration 7.78에 대한 추가 정보" data-title="All-in-One WP Migration 7.78">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Move, transfer, copy, migrate, and backup a site with 1-click. Quick, easy, and reliable.</p>
+					<p class="authors"> <cite>작성자 <a href="https://servmask.com/">ServMask</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">7,239 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(7,239)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-really-simple-ssl">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=really-simple-ssl&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						정말 간단한 SSL						<img src="https://ps.w.org/really-simple-ssl/assets/icon-256x256.png?rev=2839720" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="really-simple-ssl" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=really-simple-ssl&#038;_wpnonce=323c556612" aria-label="지금 정말 간단한 SSL 7.0.8 설치" data-name="정말 간단한 SSL 7.0.8">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=really-simple-ssl&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="정말 간단한 SSL 7.0.8에 대한 추가 정보" data-title="정말 간단한 SSL 7.0.8">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>보안을 강화하는 가장 쉬운 방법! SSL 인증서를 활용하고 웹사이트 방문자를 보호하십시오.</p>
+					<p class="authors"> <cite>작성자 <a href="https://really-simple-plugins.com">Really Simple Plugins</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">8,352 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(8,352)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-jetpack">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=jetpack&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						젯팩 &#8211; WP 보안, 백업, 속도, 확장						<img src="https://ps.w.org/jetpack/assets/icon.svg?rev=2819237" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="jetpack" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=jetpack&#038;_wpnonce=a18dbe1408" aria-label="지금 젯팩 &#8211; WP 보안, 백업, 속도, 확장 12.5 설치" data-name="젯팩 &#8211; WP 보안, 백업, 속도, 확장 12.5">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=jetpack&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="젯팩 &#8211; WP 보안, 백업, 속도, 확장 12.5에 대한 추가 정보" data-title="젯팩 &#8211; WP 보안, 백업, 속도, 확장 12.5">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>백업, WAF 및 악성코드 검사와 같은 강력한 원클릭 도구로 WP 보안을 개선하세요. 통계, CDN 및 소셜 공유가 포함된 필수 무료 도구를 이용하세요.</p>
+					<p class="authors"> <cite>작성자 <a href="https://jetpack.com">Automattic</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,912 평가 기준에 의한 4.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-empty" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,912)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					5백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wordfence">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordfence&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						워드펜스 보안 &#8211; 방화벽, 멀웨어 스캔 그리고 로그인 보안						<img src="https://ps.w.org/wordfence/assets/icon.svg?rev=2070865" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wordfence" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wordfence&#038;_wpnonce=9a5555a03e" aria-label="지금 워드펜스 보안 &#8211; 방화벽, 멀웨어 스캔 그리고 로그인 보안 7.10.3 설치" data-name="워드펜스 보안 &#8211; 방화벽, 멀웨어 스캔 그리고 로그인 보안 7.10.3">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordfence&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="워드펜스 보안 &#8211; 방화벽, 멀웨어 스캔 그리고 로그인 보안 7.10.3에 대한 추가 정보" data-title="워드펜스 보안 &#8211; 방화벽, 멀웨어 스캔 그리고 로그인 보안 7.10.3">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>방화벽, 멀웨어 검사기, 2단계 인증 및 포괄적 보안 기능, 24시간 팀이 제공합니다. 워드펜스를 통해 보안을 우선시하십시오.</p>
+					<p class="authors"> <cite>작성자 <a href="http://www.wordfence.com/">Wordfence</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">3,956 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(3,956)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1개월 전				</div>
+				<div class="column-downloaded">
+					4백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-litespeed-cache">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=litespeed-cache&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						LiteSpeed Cache						<img src="https://ps.w.org/litespeed-cache/assets/icon-256x256.png?rev=2554181" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="litespeed-cache" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=litespeed-cache&#038;_wpnonce=ad1cc94d93" aria-label="지금 LiteSpeed Cache 5.6 설치" data-name="LiteSpeed Cache 5.6">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=litespeed-cache&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="LiteSpeed Cache 5.6에 대한 추가 정보" data-title="LiteSpeed Cache 5.6">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>All-in-one unbeatable acceleration &amp; PageSpeed improvement: caching, image/CSS/JS optimization...</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.litespeedtech.com">LiteSpeed Technologies</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">2,269 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(2,269)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2주 전				</div>
+				<div class="column-downloaded">
+					4백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-duplicate-post">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicate-post&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						요스트 글 복제						<img src="https://ps.w.org/duplicate-post/assets/icon-256x256.png?rev=2336666" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="duplicate-post" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=duplicate-post&#038;_wpnonce=82dcad856b" aria-label="지금 요스트 글 복제 4.5 설치" data-name="요스트 글 복제 4.5">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicate-post&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="요스트 글 복제 4.5에 대한 추가 정보" data-title="요스트 글 복제 4.5">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The go-to tool for cloning posts and pages, including the powerful Rewrite &amp; Republish feature.</p>
+					<p class="authors"> <cite>작성자 <a href="https://yoast.com">Enrico Battocchi &amp; Team Yoast</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">506 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(506)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4주 전				</div>
+				<div class="column-downloaded">
+					4백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wordpress-importer">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordpress-importer&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						워드프레스 가져오기 도구						<img src="https://ps.w.org/wordpress-importer/assets/icon.svg?rev=2791650" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wordpress-importer" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wordpress-importer&#038;_wpnonce=a6a6eb8e56" aria-label="지금 워드프레스 가져오기 도구 0.8.1 설치" data-name="워드프레스 가져오기 도구 0.8.1">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wordpress-importer&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="워드프레스 가져오기 도구 0.8.1에 대한 추가 정보" data-title="워드프레스 가져오기 도구 0.8.1">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>워드프레스 내보내기 파일에서 글, 페이지, 댓글, 사용자 정의 필드, 카테고리, 태그 등을 가져올 수 있습니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://wordpress.org/">wordpressdotorg</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">305 평가 기준에 의한 3.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-empty" aria-hidden="true"></div><div class="star star-empty" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(305)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4개월 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-untested">워드프레스 버전에서 시험하지 않았습니다</span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-google-site-kit">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-site-kit&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						구글 사이트 키트 &#8211; 분석, 검색 콘솔, 애드센스, 스피드						<img src="https://ps.w.org/google-site-kit/assets/icon-256x256.png?rev=2181376" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="google-site-kit" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=google-site-kit&#038;_wpnonce=bdaea59152" aria-label="지금 구글 사이트 키트 &#8211; 분석, 검색 콘솔, 애드센스, 스피드 1.108.0 설치" data-name="구글 사이트 키트 &#8211; 분석, 검색 콘솔, 애드센스, 스피드 1.108.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-site-kit&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="구글 사이트 키트 &#8211; 분석, 검색 콘솔, 애드센스, 스피드 1.108.0에 대한 추가 정보" data-title="구글 사이트 키트 &#8211; 분석, 검색 콘솔, 애드센스, 스피드 1.108.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>사이트킷은 구글이 웹을 성공적으로 만들어 주는 모든 것을 이용하는 워드프레스 이용자용 종합 해법입니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://opensource.google.com">Google</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">729 평가 기준에 의한 4.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-empty" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(729)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3일 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-updraftplus">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=updraftplus&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						UpdraftPlus WordPress Backup &amp; Migration Plugin						<img src="https://ps.w.org/updraftplus/assets/icon-256x256.jpg?rev=1686200" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="updraftplus" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=updraftplus&#038;_wpnonce=70f2ce09f0" aria-label="지금 UpdraftPlus WordPress Backup &amp; Migration Plugin 1.23.9 설치" data-name="UpdraftPlus WordPress Backup &amp; Migration Plugin 1.23.9">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=updraftplus&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="UpdraftPlus WordPress Backup &amp; Migration Plugin 1.23.9에 대한 추가 정보" data-title="UpdraftPlus WordPress Backup &amp; Migration Plugin 1.23.9">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Backup, restoration and migration. Makes complete backups; manual or scheduled (backup to Dropbox, Google Drive, S3, Rackspace, FTP + others).</p>
+					<p class="authors"> <cite>작성자 <a href="https://updraftplus.com">UpdraftPlus.Com, DavidAnderson</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">7,155 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(7,155)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wp-mail-smtp">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wp-mail-smtp&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						WPForms의 WP 메일 SMTP &#8211; 가장 인기 있는 SMTP 및 이메일 로그 플러그인						<img src="https://ps.w.org/wp-mail-smtp/assets/icon-256x256.png?rev=1755440" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wp-mail-smtp" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wp-mail-smtp&#038;_wpnonce=36da85d21f" aria-label="지금 WPForms의 WP 메일 SMTP &#8211; 가장 인기 있는 SMTP 및 이메일 로그 플러그인 3.9.0 설치" data-name="WPForms의 WP 메일 SMTP &#8211; 가장 인기 있는 SMTP 및 이메일 로그 플러그인 3.9.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wp-mail-smtp&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="WPForms의 WP 메일 SMTP &#8211; 가장 인기 있는 SMTP 및 이메일 로그 플러그인 3.9.0에 대한 추가 정보" data-title="WPForms의 WP 메일 SMTP &#8211; 가장 인기 있는 SMTP 및 이메일 로그 플러그인 3.9.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>워드프레스에서 이메일 전송을 쉽게 보내세요. SMTP, Gmail, Outlook, SendGrid, Mailgun, SES, Zoho 등과 연결합니다. 등급 1위 워드프레스 SMTP 이메일 플러그인.</p>
+					<p class="authors"> <cite>작성자 <a href="https://wpmailsmtp.com/">WP Mail SMTP</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">3,992 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(3,992)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2일 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-google-analytics-for-wordpress">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-analytics-for-wordpress&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						MonsterInsights &#8211; Google Analytics Dashboard for WordPress (Website Stats Made Easy)						<img src="https://ps.w.org/google-analytics-for-wordpress/assets/icon.svg?rev=1598927" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="google-analytics-for-wordpress" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=google-analytics-for-wordpress&#038;_wpnonce=87cbe468fc" aria-label="지금 MonsterInsights &#8211; Google Analytics Dashboard for WordPress (Website Stats Made Easy) 8.19 설치" data-name="MonsterInsights &#8211; Google Analytics Dashboard for WordPress (Website Stats Made Easy) 8.19">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-analytics-for-wordpress&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="MonsterInsights &#8211; Google Analytics Dashboard for WordPress (Website Stats Made Easy) 8.19에 대한 추가 정보" data-title="MonsterInsights &#8211; Google Analytics Dashboard for WordPress (Website Stats Made Easy) 8.19">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The best free Google Analytics plugin for WordPress. See how visitors find and use your website, so you can grow your business.</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.monsterinsights.com/lite/?utm_source=liteplugin&amp;utm_medium=pluginheader&amp;utm_campaign=authoruri&amp;utm_content=7%2E0%2E0">MonsterInsights</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">2,682 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(2,682)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-all-in-one-seo-pack">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=all-in-one-seo-pack&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic						<img src="https://ps.w.org/all-in-one-seo-pack/assets/icon.svg?rev=2443290" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="all-in-one-seo-pack" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=all-in-one-seo-pack&#038;_wpnonce=eccaca01d5" aria-label="지금 All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic 4.4.5.1 설치" data-name="All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic 4.4.5.1">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=all-in-one-seo-pack&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic 4.4.5.1에 대한 추가 정보" data-title="All in One SEO – Best WordPress SEO Plugin – Easily Improve SEO Rankings &amp; Increase Traffic 4.4.5.1">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The original WordPress SEO plugin. Improve your WordPress SEO rankings and traffic with our comprehensive SEO tools and smart SEO optimizations!</p>
+					<p class="authors"> <cite>작성자 <a href="https://aioseo.com/">All in One SEO Team</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">3,612 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(3,612)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					22시간 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-duplicate-page">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicate-page&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						중복 페이지						<img src="https://ps.w.org/duplicate-page/assets/icon-128x128.jpg?rev=1412874" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="duplicate-page" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=duplicate-page&#038;_wpnonce=9984084bf7" aria-label="지금 중복 페이지 4.5.2 설치" data-name="중복 페이지 4.5.2">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicate-page&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="중복 페이지 4.5.2에 대한 추가 정보" data-title="중복 페이지 4.5.2">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>한 번의 클릭으로 쉽게 게시물, 페이지 및 사용자 지정 게시물 복제</p>
+					<p class="authors"> <cite>작성자 <a href="https://profiles.wordpress.org/mndpsingh287/">mndpsingh287</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">337 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(337)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					4개월 전				</div>
+				<div class="column-downloaded">
+					3백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-untested">워드프레스 버전에서 시험하지 않았습니다</span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-redirection">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=redirection&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Redirection						<img src="https://ps.w.org/redirection/assets/icon-256x256.jpg?rev=983639" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="redirection" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=redirection&#038;_wpnonce=2dd4e659b7" aria-label="지금 Redirection 5.3.10 설치" data-name="Redirection 5.3.10">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=redirection&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Redirection 5.3.10에 대한 추가 정보" data-title="Redirection 5.3.10">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>301 리디렉션을 관리하고, 404 오류를 추적하고, 사이트를 개선하세요. Apache 또는 Nginx에 대한 지식이 필요하지 않습니다.</p>
+					<p class="authors"> <cite>작성자 John Godley</cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">634 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(634)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					5개월 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-untested">워드프레스 버전에서 시험하지 않았습니다</span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-tinymce-advanced">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=tinymce-advanced&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						고급 편집기 도구						<img src="https://ps.w.org/tinymce-advanced/assets/icon-256x256.png?rev=971511" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="tinymce-advanced" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=tinymce-advanced&#038;_wpnonce=4a20a4a59f" aria-label="지금 고급 편집기 도구 5.9.2 설치" data-name="고급 편집기 도구 5.9.2">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=tinymce-advanced&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="고급 편집기 도구 5.9.2에 대한 추가 정보" data-title="고급 편집기 도구 5.9.2">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>블록 편집기(구텐베르크) 및 클래식 편집기(TinyMCE)를 확장하고 향상시킵니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://automattic.com">Automattic</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">335 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(335)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-seo-by-rank-math">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=seo-by-rank-math&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Rank Math 검색엔진 최적화						<img src="https://ps.w.org/seo-by-rank-math/assets/icon.svg?rev=2848340" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="seo-by-rank-math" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=seo-by-rank-math&#038;_wpnonce=039318b1dc" aria-label="지금 Rank Math 검색엔진 최적화 1.0.122 설치" data-name="Rank Math 검색엔진 최적화 1.0.122">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=seo-by-rank-math&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Rank Math 검색엔진 최적화 1.0.122에 대한 추가 정보" data-title="Rank Math 검색엔진 최적화 1.0.122">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Rank Math 검색엔진 최적화는 최고의 워드프레스 검색엔진 최적화 플러그인으로 많은 검색엔진 최적화 도구의 기능을 단일 패키지에 결합하고 검색엔진 최적화 트래픽을 증가시키는 데 도움을 줍니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://rankmath.com/?utm_source=Plugin&amp;utm_medium=Readme%20Author%20URI&amp;utm_campaign=WP">Rank Math</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">5,955 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(5,955)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-limit-login-attempts-reloaded">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=limit-login-attempts-reloaded&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						로그인 시도 제한 리로디드						<img src="https://ps.w.org/limit-login-attempts-reloaded/assets/icon-256x256.png?rev=2456910" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="limit-login-attempts-reloaded" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=limit-login-attempts-reloaded&#038;_wpnonce=18f65de126" aria-label="지금 로그인 시도 제한 리로디드 2.25.24 설치" data-name="로그인 시도 제한 리로디드 2.25.24">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=limit-login-attempts-reloaded&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="로그인 시도 제한 리로디드 2.25.24에 대한 추가 정보" data-title="로그인 시도 제한 리로디드 2.25.24">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>과도한 로그인 시도를 차단하고 무차별 암호 대입 공격으로부터 사이트를 보호하세요. 사이트 성능을 향상시키는 간단하면서도 강력한 도구입니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.limitloginattempts.com/">Limit Login Attempts Reloaded</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,168 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,168)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2일 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-mailchimp-for-wp">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=mailchimp-for-wp&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						MC4WP: 워드프레스용 메일침프						<img src="https://ps.w.org/mailchimp-for-wp/assets/icon-256x256.png?rev=1224577" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="mailchimp-for-wp" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=mailchimp-for-wp&#038;_wpnonce=356357337c" aria-label="지금 MC4WP: 워드프레스용 메일침프 4.9.7 설치" data-name="MC4WP: 워드프레스용 메일침프 4.9.7">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=mailchimp-for-wp&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="MC4WP: 워드프레스용 메일침프 4.9.7에 대한 추가 정보" data-title="MC4WP: 워드프레스용 메일침프 4.9.7">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>(비공식) No.1 메일침프 플러그인. 워드프레스 사이트에 다양한 가입 방법을 추가할 수 있습니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://ibericode.com/">ibericode</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,444 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,444)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3일 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-classic-widgets">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=classic-widgets&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						클래식 위젯						<img src="https://s.w.org/plugins/geopattern-icon/classic-widgets.svg" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="classic-widgets" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=classic-widgets&#038;_wpnonce=70a88cf327" aria-label="지금 클래식 위젯 0.3 설치" data-name="클래식 위젯 0.3">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=classic-widgets&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="클래식 위젯 0.3에 대한 추가 정보" data-title="클래식 위젯 0.3">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>모양 - 위젯 및 사용자 정의 프로그램에서 이전 "클래식" 위젯 설정 화면을 활성화합니다. 위젯 관리에서 블록 편집기를 비활성화합니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://github.com/WordPress/classic-widgets/">WordPress Contributors</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">244 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(244)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-advanced-custom-fields">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=advanced-custom-fields&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						고급 사용자 지정 필드(ACF)						<img src="https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png?rev=1082746" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="advanced-custom-fields" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=advanced-custom-fields&#038;_wpnonce=2e75a79071" aria-label="지금 고급 사용자 지정 필드(ACF) 6.2.0 설치" data-name="고급 사용자 지정 필드(ACF) 6.2.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=advanced-custom-fields&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="고급 사용자 지정 필드(ACF) 6.2.0에 대한 추가 정보" data-title="고급 사용자 지정 필드(ACF) 6.2.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>고급 사용자 지정 필드(ACF)를 사용하면 강력하고 전문적이며 직관적인 필드로 워드프레스를 쉽게 사용자 지정할 수 있습니다. 자랑스럽게 200만 개가 넘는 사이트에서 사용되는 우리 플러그인은 …</p>
+					<p class="authors"> <cite>작성자 <a href="https://wpengine.com/?utm_source=wordpress.org&amp;utm_medium=referral&amp;utm_campaign=plugin_directory&amp;utm_content=advanced_custom_fields">WP Engine</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,189 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,189)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-insert-headers-and-footers">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=insert-headers-and-footers&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						WPCode &#8211; Insert Headers and Footers + Custom Code Snippets &#8211; WordPress Code Manager						<img src="https://ps.w.org/insert-headers-and-footers/assets/icon-256x256.png?rev=2758516" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="insert-headers-and-footers" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=insert-headers-and-footers&#038;_wpnonce=8b17114db5" aria-label="지금 WPCode &#8211; Insert Headers and Footers + Custom Code Snippets &#8211; WordPress Code Manager 2.1.2 설치" data-name="WPCode &#8211; Insert Headers and Footers + Custom Code Snippets &#8211; WordPress Code Manager 2.1.2">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=insert-headers-and-footers&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="WPCode &#8211; Insert Headers and Footers + Custom Code Snippets &#8211; WordPress Code Manager 2.1.2에 대한 추가 정보" data-title="WPCode &#8211; Insert Headers and Footers + Custom Code Snippets &#8211; WordPress Code Manager 2.1.2">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Easily add code snippets in WordPress. Insert header and footer scripts, add PHP code snippets with conditional logic, insert ads pixel code, and more &hellip;</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.wpcode.com/">WPCode</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,178 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,178)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3일 전				</div>
+				<div class="column-downloaded">
+					2백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-wp-super-cache">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wp-super-cache&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						WP Super Cache						<img src="https://ps.w.org/wp-super-cache/assets/icon-256x256.png?rev=1095422" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="wp-super-cache" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=wp-super-cache&#038;_wpnonce=e8accbac94" aria-label="지금 WP Super Cache 1.10.0 설치" data-name="WP Super Cache 1.10.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=wp-super-cache&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="WP Super Cache 1.10.0에 대한 추가 정보" data-title="WP Super Cache 1.10.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>A very fast caching engine for WordPress that produces static html files.</p>
+					<p class="authors"> <cite>작성자 <a href="https://automattic.com/">Automattic</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">1,315 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(1,315)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-essential-addons-for-elementor-lite">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=essential-addons-for-elementor-lite&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Essential Addons for Elementor						<img src="https://ps.w.org/essential-addons-for-elementor-lite/assets/icon-256x256.png?rev=2598498" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="essential-addons-for-elementor-lite" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=essential-addons-for-elementor-lite&#038;_wpnonce=d9bf55a0b1" aria-label="지금 Essential Addons for Elementor 5.8.7 설치" data-name="Essential Addons for Elementor 5.8.7">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=essential-addons-for-elementor-lite&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Essential Addons for Elementor 5.8.7에 대한 추가 정보" data-title="Essential Addons for Elementor 5.8.7">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The Essential plugin you install after Elementor! Packed with 40+ stunning free elements including Advanced Data Table, Event Calendar, Filterable Gal &hellip;</p>
+					<p class="authors"> <cite>작성자 <a href="https://wpdeveloper.com/">WPDeveloper</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">3,219 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(3,219)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-loco-translate">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=loco-translate&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Loco Translate						<img src="https://ps.w.org/loco-translate/assets/icon-256x256.png?rev=1000676" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="loco-translate" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=loco-translate&#038;_wpnonce=39d9ae5a73" aria-label="지금 Loco Translate 2.6.5 설치" data-name="Loco Translate 2.6.5">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=loco-translate&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Loco Translate 2.6.5에 대한 추가 정보" data-title="Loco Translate 2.6.5">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>워드프레스 플러그인과 테마를 당신의 브라우저에서 바로 번역해 보세요.</p>
+					<p class="authors"> <cite>작성자 <a href="https://localise.biz/wordpress/plugin">Tim Whitlock</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">405 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(405)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					18시간 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-astra-sites">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=astra-sites&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						스타터 템플릿 &#8211; 엘리멘터, 워드프레스 그리고 비버 빌더 템플릿						<img src="https://ps.w.org/astra-sites/assets/icon.svg?rev=2772059" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="astra-sites" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=astra-sites&#038;_wpnonce=95f559ecbd" aria-label="지금 스타터 템플릿 &#8211; 엘리멘터, 워드프레스 그리고 비버 빌더 템플릿 3.4.0 설치" data-name="스타터 템플릿 &#8211; 엘리멘터, 워드프레스 그리고 비버 빌더 템플릿 3.4.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=astra-sites&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="스타터 템플릿 &#8211; 엘리멘터, 워드프레스 그리고 비버 빌더 템플릿 3.4.0에 대한 추가 정보" data-title="스타터 템플릿 &#8211; 엘리멘터, 워드프레스 그리고 비버 빌더 템플릿 3.4.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Astra, Hello, OceanWP, GeneratePress 등 모든 워드프레스 테마에서 작동하는 300개 이상의 즉시 사용 가능한 템플릿 라이브러리가 늘어나고 있습니다.</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.brainstormforce.com">Brainstorm Force</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">4,198 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(4,198)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-duplicator">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicator&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Duplicator &#8211; WordPress Migration &amp; Backup Plugin						<img src="https://ps.w.org/duplicator/assets/icon-256x256.png?rev=2906985" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="duplicator" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=duplicator&#038;_wpnonce=616be95bd6" aria-label="지금 Duplicator &#8211; WordPress Migration &amp; Backup Plugin 1.5.5.1 설치" data-name="Duplicator &#8211; WordPress Migration &amp; Backup Plugin 1.5.5.1">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=duplicator&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Duplicator &#8211; WordPress Migration &amp; Backup Plugin 1.5.5.1에 대한 추가 정보" data-title="Duplicator &#8211; WordPress Migration &amp; Backup Plugin 1.5.5.1">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>WordPress migration and backups are much easier with Duplicator! Clone, backup, move and transfer an entire site from one location to another.</p>
+					<p class="authors"> <cite>작성자 <a href="https://duplicator.com/">Duplicator</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">4,151 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(4,151)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1개월 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-untested">워드프레스 버전에서 시험하지 않았습니다</span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-header-footer-elementor">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=header-footer-elementor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						Elementor Header &amp; Footer Builder						<img src="https://ps.w.org/header-footer-elementor/assets/icon.svg?rev=2813167" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="header-footer-elementor" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=header-footer-elementor&#038;_wpnonce=20f0cde512" aria-label="지금 Elementor Header &amp; Footer Builder 1.6.15 설치" data-name="Elementor Header &amp; Footer Builder 1.6.15">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=header-footer-elementor&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="Elementor Header &amp; Footer Builder 1.6.15에 대한 추가 정보" data-title="Elementor Header &amp; Footer Builder 1.6.15">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Create Header, Footer and Blocks for your WordPress website using Elementor Page Builder for free.</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.brainstormforce.com/">Brainstorm Force, Nikhil Chavan</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">2,141 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(2,141)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					2주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-sg-cachepress">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=sg-cachepress&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						SiteGround Optimizer						<img src="https://ps.w.org/sg-cachepress/assets/icon.svg?rev=2124570" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="sg-cachepress" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=sg-cachepress&#038;_wpnonce=093e3163d9" aria-label="지금 SiteGround Optimizer 7.4.0 설치" data-name="SiteGround Optimizer 7.4.0">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=sg-cachepress&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="SiteGround Optimizer 7.4.0에 대한 추가 정보" data-title="SiteGround Optimizer 7.4.0">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>The SiteGround Optimizer plugin is developed by SiteGround to dramatically improve WordPress website performance on any hosting environment.</p>
+					<p class="authors"> <cite>작성자 <a href="https://www.siteground.com">SiteGround</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">535 평가 기준에 의한 4.5 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-half" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(535)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					1주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+					<div class="plugin-card plugin-card-google-sitemap-generator">
+						<div class="plugin-card-top">
+				<div class="name column-name">
+					<h3>
+						<a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-sitemap-generator&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal">
+						XML Sitemap Generator for Google						<img src="https://ps.w.org/google-sitemap-generator/assets/icon-256x256.png?rev=2713572" class="plugin-icon" alt="" />
+						</a>
+					</h3>
+				</div>
+				<div class="action-links">
+					<ul class="plugin-action-buttons"><li><a class="install-now button" data-slug="google-sitemap-generator" href="http://localhost:8080/wp-admin/update.php?action=install-plugin&#038;plugin=google-sitemap-generator&#038;_wpnonce=63fadc59a8" aria-label="지금 XML Sitemap Generator for Google 4.1.13 설치" data-name="XML Sitemap Generator for Google 4.1.13">지금 설치</a></li><li><a href="http://localhost:8080/wp-admin/plugin-install.php?tab=plugin-information&#038;plugin=google-sitemap-generator&#038;TB_iframe=true&#038;width=600&#038;height=550" class="thickbox open-plugin-details-modal" aria-label="XML Sitemap Generator for Google 4.1.13에 대한 추가 정보" data-title="XML Sitemap Generator for Google 4.1.13">더 많은 상세</a></li></ul>				</div>
+				<div class="desc column-description">
+					<p>Generate multiple types of sitemaps to improve SEO and get your website indexed quickly.</p>
+					<p class="authors"> <cite>작성자 <a href="https://auctollo.com/">Auctollo</a></cite></p>
+				</div>
+			</div>
+			<div class="plugin-card-bottom">
+				<div class="vers column-rating">
+					<div class="star-rating"><span class="screen-reader-text">2,153 평가 기준에 의한 5.0 평가</span><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div><div class="star star-full" aria-hidden="true"></div></div>					<span class="num-ratings" aria-hidden="true">(2,153)</span>
+				</div>
+				<div class="column-updated">
+					<strong>최근 업데이트:</strong>
+					3주 전				</div>
+				<div class="column-downloaded">
+					1백만 이상 활성 설치				</div>
+				<div class="column-compatibility">
+					<span class="compatibility-compatible">사용중인 워드프레스 버전과 <strong>호환됨</strong></span>				</div>
+			</div>
+		</div>
+				</div>
+</div>
+					<div class="tablenav bottom">
+				<div class='tablenav-pages'><span class="displaying-num">54,913 아이템</span>
+<span class='pagination-links'><span class="tablenav-pages-navspan button disabled" aria-hidden="true">&laquo;</span>
+<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&lsaquo;</span>
+<span class="screen-reader-text">현재 페이지</span><span id="table-paging" class="paging-input"><span class="tablenav-paging-text"><span class='total-pages'>1,526</span> 중 1</span></span>
+<a class='next-page button' href='http://localhost:8080/wp-admin/plugin-install.php?tab=popular&#038;paged=2'><span class='screen-reader-text'>다음 페이지</span><span aria-hidden='true'>&rsaquo;</span></a>
+<a class='last-page button' href='http://localhost:8080/wp-admin/plugin-install.php?tab=popular&#038;paged=1526'><span class='screen-reader-text'>마지막 페이지</span><span aria-hidden='true'>&raquo;</span></a></span></div>				<br class="clear" />
+			</div>
+				</form>
+	
+	<span class="spinner"></span>
+</div>
+
+	<script id="tmpl-wp-updates-admin-notice" type="text/html">
+		<div <# if ( data.id ) { #>id="{{ data.id }}"<# } #> class="notice {{ data.className }}"><p>{{{ data.message }}}</p></div>
+	</script>
+	<script id="tmpl-wp-bulk-updates-admin-notice" type="text/html">
+		<div id="{{ data.id }}" class="{{ data.className }} notice <# if ( data.errors ) { #>notice-error<# } else { #>notice-success<# } #>">
+			<p>
+				<# if ( data.successes ) { #>
+					<# if ( 1 === data.successes ) { #>
+						<# if ( 'plugin' === data.type ) { #>
+							{{ data.successes }} 플러그인 업데이트 성공.						<# } else { #>
+							{{ data.successes }} 테마 업데이트 성공.						<# } #>
+					<# } else { #>
+						<# if ( 'plugin' === data.type ) { #>
+							{{ data.successes }} 플러그인 업데이트 성공.						<# } else { #>
+							{{ data.successes }} 테마 업데이트 성공.						<# } #>
+					<# } #>
+				<# } #>
+				<# if ( data.errors ) { #>
+					<button class="button-link bulk-action-errors-collapsed" aria-expanded="false">
+						<# if ( 1 === data.errors ) { #>
+							{{ data.errors }}의 업데이트 실패함.						<# } else { #>
+							{{ data.errors }} 업데이트 실패함.						<# } #>
+						<span class="screen-reader-text">
+							추가 세부정보 보기						</span>
+						<span class="toggle-indicator" aria-hidden="true"></span>
+					</button>
+				<# } #>
+			</p>
+			<# if ( data.errors ) { #>
+				<ul class="bulk-action-errors hidden">
+					<# _.each( data.errorMessages, function( errorMessage ) { #>
+						<li>{{ errorMessage }}</li>
+					<# } ); #>
+				</ul>
+			<# } #>
+		</div>
+	</script>
+	
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter" role="contentinfo">
+		<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou"><a href="https://wordpress.org/">워드프레스</a>로 만들어주셔서 감사합니다.</span>	</p>
+	<p id="footer-upgrade" class="alignright">
+		<strong><a href="http://localhost:8080/wp-admin/update-core.php">6.3.1 버전 얻기</a></strong>	</p>
+	<div class="clear"></div>
+</div>
+	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<button type="button" class="wp-auth-check-close button-link"><span class="screen-reader-text">
+		대화상자 닫기	</span></button>
+			<div id="wp-auth-check-form" class="loading" data-src="http://localhost:8080/wp-login.php?interim-login=1&#038;wp_lang=ko_KR"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">세션이 만료됐습니다</b></p>
+		<p><a href="http://localhost:8080/wp-login.php" target="_blank">다시 로그인해주세요.</a>
+		로그인 페이지는 새 창에 열립니다. 로그인 후에 새 창을 닫고 이 페이지에 다시 올 수 있습니다.</p>
+	</div>
+	</div>
+	</div>
+	<script src='http://localhost:8080/wp-admin/load-scripts.php?c=0&amp;load%5Bchunk_0%5D=hoverIntent,wp-polyfill-inert,regenerator-runtime,wp-polyfill,wp-hooks&amp;ver=6.3'></script>
+<script src='http://localhost:8080/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='common-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-04 06:07:20+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ko_KR"},"%1$s is deprecated since version %2$s with no alternative available.":["%1$s\uc744(\ub97c) %2$s \ubc84\uc804\ubd80\ud130 \ud3d0\uae30\uc608\uc815\uc774\uba70 \ub300\uc548\uc774 \uc5c6\uc2b5\ub2c8\ub2e4."],"%1$s is deprecated since version %2$s! Use %3$s instead.":["%1$s\uc740(\ub294) %2$s \ubc84\uc804\ubd80\ud130 \ud3d0\uae30\uc608\uc815\uc785\ub2c8\ub2e4! \ub300\uc2e0 %3$s\uc744(\ub97c) \uc0ac\uc6a9\ud558\uc138\uc694."],"Expand Main menu":["\uba54\uc778\uba54\ub274 \ud655\uc7a5"],"Dismiss this notice.":["\uc774 \uc54c\ub9bc \ubb34\uc2dc."],"You are about to permanently delete these items from your site.\nThis action cannot be undone.\n'Cancel' to stop, 'OK' to delete.":["\uc0ac\uc774\ud2b8\uc5d0\uc11c \uc774 \uc544\uc774\ud15c\uc744 \uc601\uad6c \uc0ad\uc81c\ud558\ub824\uace0 \ud569\ub2c8\ub2e4.\n\uc774 \uc791\uc5c5\uc740 \ucde8\uc18c\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4.\n\uc911\uc9c0\ud558\ub824\uba74 '\ucde8\uc18c'\ub97c, \uc0ad\uc81c\ud558\ub824\uba74 'OK'\ub97c \ud074\ub9ad\ud558\uc138\uc694."],"Collapse Main menu":["\uc8fc \uba54\ub274 \uc811\uae30"]}},"comment":{"reference":"wp-admin\/js\/common.js"}} );
+</script>
+<script src='http://localhost:8080/wp-admin/js/common.min.js?ver=6.3' id='common-js'></script>
+<script src='http://localhost:8080/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+<script src='http://localhost:8080/wp-includes/js/admin-bar.min.js?ver=6.3' id='admin-bar-js'></script>
+<script src='http://localhost:8080/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script id='thickbox-js-extra'>
+var thickboxL10n = {"next":"\ub2e4\uc74c >","prev":"< \uc774\uc804","image":"\uc774\ubbf8\uc9c0","of":"-","close":"\ub2eb\uae30","noiframes":"\uc774 \uae30\ub2a5\uc740 \uc778\ub77c\uc778 \ud504\ub808\uc784\uc774 \ud544\uc694\ud569\ub2c8\ub2e4. iframe\uc774 \ube44\ud65c\uc131\ud654 \ub410\uac70\ub098 \ube0c\ub77c\uc6b0\uc800\uac00 \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.","loadingAnimation":"http:\/\/localhost:8080\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+</script>
+<script src='http://localhost:8080/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105' id='thickbox-js'></script>
+<script id='plugin-install-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-04 06:07:20+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ko_KR"},"Plugin details":["\ud50c\ub7ec\uadf8\uc778 \uc0c1\uc138"],"Plugin: %s":["\ud50c\ub7ec\uadf8\uc778: %s"]}},"comment":{"reference":"wp-admin\/js\/plugin-install.js"}} );
+</script>
+<script src='http://localhost:8080/wp-admin/js/plugin-install.min.js?ver=6.3' id='plugin-install-js'></script>
+<script src='http://localhost:8080/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='http://localhost:8080/wp-includes/js/wp-util.min.js?ver=6.3' id='wp-util-js'></script>
+<script src='http://localhost:8080/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-04 06:05:59+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ko_KR"},"Notifications":["\uc54c\ub9bc"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script src='http://localhost:8080/wp-includes/js/dist/a11y.min.js?ver=7032343a947cfccf5608' id='wp-a11y-js'></script>
+<script src='http://localhost:8080/wp-includes/js/wp-sanitize.min.js?ver=6.3' id='wp-sanitize-js'></script>
+<script id='updates-js-extra'>
+var _wpUpdatesSettings = {"ajax_nonce":"5afa56b66c"};
+var _wpUpdatesItemCounts = {"plugins":{"all":["q2w3-inc-manager\/q2w3-inc-manager.php","social-linkz\/social-linkz.php","spam-captcha\/spam-captcha.php","peters-custom-anti-spam-image\/custom_anti_spam.php","wp-pocket-urls\/wp-pocketurl.php"],"search":[],"active":[],"inactive":[],"recently_activated":[],"mustuse":[],"dropins":[],"upgrade":["peters-custom-anti-spam-image\/custom_anti_spam.php","wp-pocket-urls\/wp-pocketurl.php"]},"totals":{"counts":{"plugins":2,"themes":0,"wordpress":1,"translations":0,"total":3},"title":"1\uac1c\uc758 \uc6cc\ub4dc\ud504\ub808\uc2a4 \uc5c5\ub370\uc774\ud2b8, 2\uac1c\uc758 \ud50c\ub7ec\uadf8\uc778 \uc5c5\ub370\uc774\ud2b8"}};
+</script>
+<script id='updates-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-04 06:07:20+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ko_KR"},"Search Results":["\uac80\uc0c9 \uacb0\uacfc"],"Search results for: %s":["\uac80\uc0c9 \uacb0\uacfc: %s"],"The request could not be completed.":["\uc694\uccad\uc744 \uc644\ub8cc\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4."],"Disabling...":["\ube44\ud65c\uc131\ud654 \uc911..."],"Enabling...":["\ud65c\uc131\ud654 \uc911..."],"Number of plugins found: %d":["\uac80\uc0c9\ub41c \ud50c\ub7ec\uadf8\uc778 \uc218: %d"],"Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?":["\uc8fc\uc758: \uc774 \ud14c\ub9c8\ub294 \ub124\ud2b8\uc6cc\ud06c\uc758 \ub2e4\ub978 \uc0ac\uc774\ud2b8\uc5d0\uc11c \ud65c\uc131\ud654\ud558\uc600\uc744 \uc218\ub3c4 \uc788\uc2b5\ub2c8\ub2e4. \uacc4\uc18d\ud558\uae30 \uc6d0\ud558\ub294\uac8c \ud655\uc2e4\ud55c\uac00\uc694?"],"Are you sure you want to delete the selected plugins and their data?":["\uc120\ud0dd\ub41c \ud50c\ub7ec\uadf8\uc778\uacfc \ud574\ub2f9 \ub370\uc774\ud130\ub97c \uc815\ub9d0\ub85c \uc0ad\uc81c\ud558\uaca0\uc2b5\ub2c8\uae4c?"],"Please select at least one item to perform this action on.":["\uc774 \uc791\uc5c5\uc744 \uc218\ud589\ud560 \ud558\ub098\uc758 \ud56d\ubaa9 \uc774\uc0c1\uc744 \uc120\ud0dd\ud574\uc8fc\uc138\uc694."],"Are you sure you want to delete %s and its data?":["%s\uc640 \ud574\ub2f9 \ub370\uc774\ud130\ub97c \uc815\ub9d0\ub85c \uc0ad\uc81c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"],"Update canceled.":["\uc5c5\ub370\uc774\ud2b8\ub97c \ucde8\uc18c\ud588\uc2b5\ub2c8\ub2e4."],"plugin\u0004Update %s now":["%s \ubc14\ub85c \uc5c5\ub370\uc774\ud2b8"],"Updates may not complete if you navigate away from this page.":["\uc774 \ud398\uc774\uc9c0\uc5d0\uc11c \ubc97\uc5b4\ub098 \ud0d0\uc0c9\ud558\uba74 \uc5c5\ub370\uc774\ud2b8\ub97c \uc644\ub8cc\ud560 \uc218 \uc5c6\uc744 \uc218\ub3c4 \uc788\uc2b5\ub2c8\ub2e4."],"Connection lost or the server is busy. Please try again later.":["\uc5f0\uacb0\uc774 \ub04a\uacbc\uac70\ub098 \uc11c\ubc84\ub97c \uc0ac\uc6a9 \uc911\uc785\ub2c8\ub2e4. \ub098\uc911\uc5d0 \ub2e4\uc2dc \uc2dc\ub3c4\ud574\uc8fc\uc138\uc694."],"Deletion failed: %s":["\uc0ad\uc81c \uc2e4\ud328: %s"],"theme\u0004Deleted!":["\uc9c0\uc6e0\uc2b5\ub2c8\ub2e4!"],"theme\u0004%s installation failed":["%s \uc124\uce58 \uc2e4\ud328\ud568"],"theme\u0004Network Activate %s":["\ub124\ud2b8\uc6cc\ud06c \ud65c\uc131\ud654 %s"],"theme\u0004%s installed!":["%s\uc744(\ub97c) \uc124\uce58\ud588\uc2b5\ub2c8\ub2e4!"],"theme\u0004Installing %s...":["%s\uc744(\ub97c) \uc124\uce58 \uc911..."],"theme\u0004Updated!":["\uc5c5\ub370\uc774\ud2b8 \ub428!"],"Updating... please wait.":["\uc5c5\ub370\uc774\ud2b8 \uc911... \uae30\ub2e4\ub824 \uc8fc\uc138\uc694."],"plugin\u0004Deleted!":["\uc0ad\uc81c\ub428!"],"Deleting...":["\uc0ad\uc81c \uc911\u2026"],"plugin\u0004Install %s now":["\uc9c0\uae08 %s \uc124\uce58"],"Importer installed successfully. <a href=\"%s\">Run importer<\/a>":["\uac00\uc838\uc624\uae30 \uc124\uce58 \uc131\uacf5. <a href=\"%s\">\uac00\uc838\uc624\uae30 \uc2e4\ud589<\/a>"],"plugin\u0004%s installation failed":["%s \uc124\uce58 \uc2e4\ud328\ud568"],"Installation failed: %s":["\uc124\uce58 \uc2e4\ud328\ud568: %s"],"Installation completed successfully.":["\uc124\uce58 \uc131\uacf5."],"plugin\u0004Installed!":["\uc124\uce58\ub428!"],"plugin\u0004%s installed!":["%s \uc124\uce58\ub428!"],"Installing... please wait.":["\uc124\uce58 \uc911... \uae30\ub2e4\ub824 \uc8fc\uc138\uc694."],"plugin\u0004Installing %s...":["%s \uc124\uce58\uc911..."],"Installing...":["\uc124\uce58 \uc911..."],"plugin\u0004%s update failed.":["%s\uc758 \uc5c5\ub370\uc774\ud2b8 \uc2e4\ud328\ud568."],"Update failed: %s":["\uc5c5\ub370\uc774\ud2b8 \uc2e4\ud328\ud568: %s"],"Update completed successfully.":["\uc5c5\ub370\uc774\ud2b8 \uc131\uacf5."],"plugin\u0004Updated!":["\uc5c5\ub370\uc774\ud2b8 \ub428!"],"plugin\u0004%s updated!":["%s \uc5c5\ub370\uc774\ud2b8 \ub428!"],"Updating...":["\uc5c5\ub370\uc774\ud2b8 \uc911..."],"plugin\u0004Updating %s...":["%s \uc5c5\ub370\uc774\ud2b8 \uc911..."],"No plugins found. Try a different search.":["\ud50c\ub7ec\uadf8\uc778\uc744 \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\ub978 \uac80\uc0c9\uc744 \uc2dc\ub3c4\ud558\uc138\uc694."],"Enable auto-updates":["\uc790\ub3d9 \uc5c5\ub370\uc774\ud2b8 \ud65c\uc131\ud654"],"Disable auto-updates":["\uc790\ub3d9 \uc5c5\ub370\uc774\ud2b8 \ube44\ud65c\uc131\ud654"],"No plugins are currently available.":["\ud604\uc7ac \uc0ac\uc6a9\uac00\ub2a5\ud55c \ud50c\ub7ec\uadf8\uc778\uc774 \uc5c6\uc2b5\ub2c8\ub2e4."],"Auto-updates disabled":["\uc790\ub3d9 \uc5c5\ub370\uc774\ud2b8 \ube44\ud65c\uc131\ud654\ub428"],"Auto-updates enabled":["\uc790\ub3d9 \uc5c5\ub370\uc774\ud2b8\ub97c \ud65c\uc131\ud654\ub428"],"plugin\u0004Network Activate %s":["%s \ub124\ud2b8\uc6cc\ud06c \ud65c\uc131\ud654"],"plugin\u0004Activate %s":["%s \ud65c\uc131\ud654"],"Run Importer":["\uac00\uc838\uc624\uae30 \uc2e4\ud589"],"Run %s":["%s \uc2e4\ud589"],"Update failed.":["\uc5c5\ub370\uc774\ud2b8 \uc2e4\ud328\ud568."],"theme\u0004Installed!":["\uc124\uce58\ub428!"],"Are you sure you want to delete %s?":["\uc815\ub9d0\ub85c \"%s\"\uc744(\ub97c) \uc0ad\uc81c\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"],"Network Enable":["\ub124\ud2b8\uc6cc\ud06c \ud65c\uc131\ud654"],"Update Now":["\uc9c0\uae08 \uc5c5\ub370\uc774\ud2b8"],"Installation failed.":["\uc124\uce58 \uc2e4\ud328\ud568."],"You do not appear to have any plugins available at this time.":["\uc774 \uc2dc\uc810\uc5d0 \uc0ac\uc6a9\ud560 \uc218 \uc788\ub294 \ud50c\ub7ec\uadf8\uc778\uc774 \ubcf4\uc774\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."],"Network Activate":["\ub124\ud2b8\uc6cc\ud06c \ud65c\uc131\ud654"],"Install Now":["\uc9c0\uae08 \uc124\uce58"],"%s update available":["%s \uc5c5\ub370\uc774\ud2b8 \uac00\ub2a5"],"Something went wrong.":["\ubb54\uac00 \uc798\ubabb\ub410\uc5b4\uc694."],"%s item":["%s \uc544\uc774\ud15c"],"theme\u0004Activate %s":["%s \ud65c\uc131\ud654"],"Live Preview":["\uc2e4\uc2dc\uac04 \ubbf8\ub9ac\ubcf4\uae30"],"An error has occurred. Please reload the page and try again.":["\uc624\ub958\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4. \ud398\uc774\uc9c0\ub97c \uc0c8\ub85c\uace0\uce58\uace0 \ub2e4\uc2dc \uc2dc\ub3c4\ud574\uc8fc\uc138\uc694."],"Activate":["\ud65c\uc131\ud654"]}},"comment":{"reference":"wp-admin\/js\/updates.js"}} );
+</script>
+<script src='http://localhost:8080/wp-admin/js/updates.min.js?ver=6.3' id='updates-js'></script>
+<script src='http://localhost:8080/wp-admin/js/svg-painter.js?ver=6.3' id='svg-painter-js'></script>
+<script id='heartbeat-js-extra'>
+var heartbeatSettings = {"nonce":"1339fc607a"};
+</script>
+<script src='http://localhost:8080/wp-includes/js/heartbeat.min.js?ver=6.3' id='heartbeat-js'></script>
+<script id='wp-auth-check-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-08-04 06:05:59+0000","generator":"GlotPress\/4.0.0-alpha.7","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ko_KR"},"Your session has expired. You can log in again from this page or go to the login page.":["\uc138\uc158\uc774 \ub9cc\ub8cc\ub410\uc2b5\ub2c8\ub2e4. \uc774 \ud398\uc774\uc9c0\uc5d0\uc11c \ub2e4\uc2dc \ub85c\uadf8\uc778\ud558\uac70\ub098 \ub85c\uadf8\uc778 \ud398\uc774\uc9c0\ub85c \uc774\ub3d9\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4."]}},"comment":{"reference":"wp-includes\/js\/wp-auth-check.js"}} );
+</script>
+<script src='http://localhost:8080/wp-includes/js/wp-auth-check.min.js?ver=6.3' id='wp-auth-check-js'></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload==='function')wpOnload();</script>
+</body>
+</html>
