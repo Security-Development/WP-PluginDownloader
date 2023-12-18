@@ -22,8 +22,11 @@ def main():
     print("[- - - - - - - - - - - - - - - - - - - - - ]")
 
     wp_info = JsonTool.dump("WP-Info.json")
+    wp_info['url'] = wp_info['url'].replace("https:"," http:")
+    
     init_setting(wp_info['url'], wp_info['id'], wp_info['pw'])
     
+    print("[*] url : {0}".format(wp_info['url']))
     print("[*] id : {0}".format(wp_info['id']))
     print("[*] pw : {0}".format(wp_info['pw']))
     
