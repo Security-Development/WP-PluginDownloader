@@ -1,7 +1,8 @@
 # WP-PluginDownloader
 WordPress Plugin Full Download Automation Program
 
-
+> The word press language must be set to English
+---
 > wordpress docker-compose.yml
 ```
 services:
@@ -31,5 +32,5 @@ services:
       WORDPRESS_DB_PASSWORD: admin
       WORDPRESS_DEBUG: 1
 
-
 ```
+
