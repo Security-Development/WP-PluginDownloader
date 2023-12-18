@@ -82,21 +82,21 @@ class CrawlerTool:
 
             return plugins
     
-    def download(self, plugin):
+    def download(self, page, plugin):
         headers = {
             "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 12871.102.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.141 Safari/537.36",
             "Connection": "close"
         }
         
         plugin_name = plugin+".zip"
-        plugin_path = "./plugin-list/{0}".format(plugin_name)
+        plugin_path = "./plugin-list/{0}/{1}".format(page, plugin_name)
         
         res = requests.get("https://downloads.wordpress.org/plugin/{0}".format(plugin_name))
         
         try:
             with open(plugin_path, "wb") as file:
                 file.write(res.content)
-                ZipFile(plugin_path).extractall("./plugin-list")
+                ZipFile(plugin_path).extractall("./plugin-list/{0}".format(page))
                 remove(plugin_path)
         except Exception as e:
             print(e)
