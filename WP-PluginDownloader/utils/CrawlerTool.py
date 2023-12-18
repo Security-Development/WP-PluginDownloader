@@ -10,7 +10,7 @@ class CrawlerTool:
         self.url = None
         self.id = None
         self.pw = None
-
+        
     def set_url(self, url):
         self.url = url
     
@@ -41,39 +41,44 @@ class CrawlerTool:
             "testcookie": "1"
         }
     
-    def dump_all_plugin(self):
-        LogHandler.call_msg("All plugin name parsing...")
+    def dump_plugin(self, page):
+        LogHandler.call_msg("Parsing plugin names on page {0}".format(page))
         
         plugins = []
 
         # 나중에 병렬 처리 할 예정
         if not self.init_check():
             LogHandler.error_msg("Make sure you have entered or entered the information correctly in WP-Info")
-        
+
         with requests.Session() as session:
-            res = session.post("{0}/wp-login.php".format(self.get_url()), data=self.login_data())
+            res = session.post("{0}/wp-login.php".format(self.get_url()), data=self.login_data(), cookies={"wordpress_test_cookie": "WP Cookie check"})
             
             if "wp-admin" in res.url:
-                print("login 성공")
+                print("[*] Login successful")
             else:
-                print("login 실패")
+                print("[*] login unsuccessful")
+                return 0xdeadbeaf
 
-        req = requests.get("{0}/wp-admin/plugin-install.php?tab=popular&paged={1}".format(self.get_url(), 0))
-        soup = BeautifulSoup(req.text, "html.parser")
+            req = session.get("{0}/wp-admin/plugin-install.php?tab=popular&paged={1}".format(self.get_url(), page))
+            soup = BeautifulSoup(req.text, "html.parser")
 
-        max_page = soup.find(class_="total-pages").text
-        element = soup.find_all(class_="plugin-card")
-
-        LogHandler.info_msg("Full Page - {0}".format(max_page))
-        LogHandler.info_msg("Current Page - {0}".format(max_page))
-        LogHandler.info_msg("Number of plugins in the current page - {0}".format(len(element)))
+            max_page = soup.find(class_="total-pages").text.replace(",", "")
+            
+            if int(max_page) <= page:
+            	return 0xdeadbeaf
+            	
+            element = soup.find_all(class_="plugin-card")
+            
+            LogHandler.info_msg("Current Page - {0}".format(page))
+            LogHandler.info_msg("Full Page - {0}".format(max_page))
+            LogHandler.info_msg("Number of plugins in the current page - {0}".format(len(element)))
         
-        for div in element:
-            plugins.append(div.get('class')[1][12:])
+            for div in element:
+                plugins.append(div.get('class')[1][12:])
         
-        LogHandler.info_msg("Finished analyzing. Let's start installing {0} plugin.".format(len(plugins)))
+            LogHandler.info_msg("Finished analyzing. Let's start installing {0} plugin.".format(len(plugins)))
 
-        return plugins
+            return plugins
     
     def download(self, plugin):
         headers = {
