@@ -1,15 +1,20 @@
 from utils.JsonTool import JsonTool
 from utils.CrawlerTool import CrawlerTool
 import concurrent.futures
+import os
 
 # use utils
 JsonTool = JsonTool()
 CrawlerTool = CrawlerTool()
 
+        
 def init_setting(url, id, pw):
     CrawlerTool.set_url(url)
     CrawlerTool.set_id(id)
     CrawlerTool.set_pw(pw)
+    
+    if not os.path.exists("./plugin-list"):
+        os.makedirs("./plugin-list")
 
 def main():
     print("[- - - - - - - - - - - - - - - - - - - - - ]")

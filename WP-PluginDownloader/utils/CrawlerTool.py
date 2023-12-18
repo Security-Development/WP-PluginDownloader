@@ -1,6 +1,8 @@
 from utils.LogHandler import LogHandler
-import requests
 from bs4 import BeautifulSoup
+from zipfile import ZipFile
+from os import remove
+import requests
 
 # use utils
 LogHandler = LogHandler()
@@ -85,8 +87,21 @@ class CrawlerTool:
             "User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 12871.102.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.141 Safari/537.36",
             "Connection": "close"
         }
-
-        req = requests.get("https://downloads.wordpress.org/plugin/"+plugin+".zip")
-        print("[*] {0} The plugin has been downloaded.".format(plugin))
+        
+        plugin_name = plugin+".zip"
+        plugin_path = "./plugin-list/{0}".format(plugin_name)
+        
+        res = requests.get("https://downloads.wordpress.org/plugin/{0}".format(plugin_name))
+        
+        try:
+            with open(plugin_path, "wb") as file:
+                file.write(res.content)
+                ZipFile(plugin_path).extractall("./plugin-list")
+                remove(plugin_path)
+        except Exception as e:
+            print(e)
+            
+        print("[*] {0} The plugin has been downloaded...".format(plugin))
+            
 
 
