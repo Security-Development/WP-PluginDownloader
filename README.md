@@ -1,7 +1,7 @@
 # WP-PluginDownloader
 WordPress Plugin Full Download Automation Program
 
-> The word press language must be set to English
+> Your wordpress language must be set to English
 ---
 > wordpress docker-compose.yml
 ```
